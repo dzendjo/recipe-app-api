@@ -12,7 +12,9 @@ class UserAdmin(BaseUserAdmin):
         (None, {'fields': ('email', 'password')}),
         (_('Persnal info'), {'fields': ('name',)}),
         (
-            _('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser')}
+            _('Permissions'), {'fields': (
+                'is_active', 'is_staff', 'is_superuser'
+            )}
         ),
         (_('Important dates'), {'fields': ('last_login',)})
     )
